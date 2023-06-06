@@ -1,11 +1,11 @@
 provider "google" {
-  project = "<project-id>"
-  region  = "asia-northeast3"
+  project = "sharp-voyage-345407"
+  region  = "us-east1"
 }
 
 terraform {
   backend "gcs" {
-    bucket = "<bucket-name>"
+    bucket = "timiddev-tfstate"
     prefix = "terraform-gke"
   }
   required_providers {
